@@ -1,0 +1,26 @@
+/***condiciones*/
+
+.condiciones{
+    padding: 0 4rem;
+    height: auto;
+}
+.container-conds{
+    margin: 50px 6rem;
+    height: 60vh;
+    text-align: justify;
+}
+
+@media (max-width:950px){
+    .condiciones{
+        margin: 0;
+        padding: 0 10px;
+        height: auto;
+        width: 100vw;
+    }
+    .container-conds{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
