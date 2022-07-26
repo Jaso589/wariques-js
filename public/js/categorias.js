@@ -3,7 +3,7 @@ const arrowBtn = document.querySelectorAll('.categoria');
 // const navLinks =  document.querySelectorAll('nav-link')
 
 
-function showAnswer(button, action) {
+function optionsCat(button, action) {
     // cards.forEach(cards => {
     //     cards.style.display = 'none';
     // })
@@ -20,7 +20,7 @@ function showAnswer(button, action) {
 const actionctg = 'bg-active'
 arrowBtn.forEach((arrowBtn) => {
     arrowBtn.onclick = function() {
-        showAnswer(arrowBtn.dataset.button, actionctg);
+        optionsCat(arrowBtn.dataset.button, actionctg);
         
     arrowBtn.classList.add(actionctg)
     }

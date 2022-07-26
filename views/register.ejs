@@ -1,49 +1,57 @@
 <%- include('templates/navbar') %> 
-<section class="register">
+<section class="register container">
     <div class="container-rg">
         <form class="formulario">
             <label for="negocio">
-                <input type="text" name="negocio" placeholder="Nombre del negocio">
+                <input class="input" type="text" name="negocio" placeholder="Nombre del negocio" required>
             </label>
             
             <label for="nombre">
-                <input type="text" name="nombre" placeholder="Nombre del representante">
+                <input class="input" type="text" name="nombre" placeholder="Nombre del representante" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
             </label>
             
             <label for="correo">
-                <input type="text" required name="correo" placeholder="Correo electrónico">
+                <input class="input" type="text" required name="correo" placeholder="Correo electrónico" pattern="[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
             </label>
             
             <label for="telefono">
-                <input type="number" required name="telefono" placeholder="Teléfono">
+                <input class="input" type="tel" required name="telefono" placeholder="Teléfonoo" pattern="[0-9]{9}">
             </label>
             <label for="comida">
-                <input type="text" name="comida" placeholder="Tipo de comida">
+                <input class="input" type="text" name="comida" placeholder="Tipo de comida" required>
             </label>
             <label for="departamento">
-                <input type="text" name="departamento" placeholder="Departamento">
+                <input class="input" type="text" name="departamento" placeholder="Departamento">
             </label>
             <label for="distrito">
-                <input type="text" name="distrito" placeholder="Distrito">
+                <input class="input" type="text" name="distrito" placeholder="Distrito">
             </label>
             <label for="direccion">
-                <input type="text" name="direccion" placeholder="Dirección">
+                <input class="input" type="text" name="direccion" placeholder="Dirección">
             </label>
+            <div class="registro-rq">
+                <div class="checks">
+                    <label for="politicas">
+                    
+                    </label>
+                    <input type="checkbox">
+                        <p>He leído <a href="#">las politícas de privacidad</a></p>
+                </div>
+                <div class="checks">
+                    <label for="publicidad">
+
+                    </label>
+                    <input type="checkbox">
+                        <p>Autorizo que me envien publicidad y/o promociones</p>
+                </div>
+            </div>
+                
+                
+            <div class="bnt-form">
+                <input type="submit" class="submit-btn">
+            </div>
         </form>
-        <div class="registro-rq">
-            <label for="politicas">
-                <input type="checkbox">
-                <span>He leído <a href="#">las politícas de privacidad</a></span>
-            </label>
-            <label for="publicidad">
-                <input type="checkbox">
-                <span>Autorizo que me envien publicidad y/o promociones</span>
-            </label>
-        </div>
-        <div class="bnt-form">
-            
-            <button type="submit" class="submit-btn">Enviar solicitud</button>
-        </div>
+        
     </div>
     
     

@@ -3,10 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
     margin: 30px auto;
     text-align: center;
-    padding: 0 4rem;
 }
 .search-dudas{
     width: 100%;

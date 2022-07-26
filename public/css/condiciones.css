@@ -1,8 +1,7 @@
 /***condiciones*/
 
 .condiciones{
-    padding: 0 4rem;
-    height: auto;
+    min-height: 85vh;
 }
 .container-conds{
     margin: 50px 6rem;
