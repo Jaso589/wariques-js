@@ -2,7 +2,7 @@ function contactFormValidations(){
     const $form = d.querySelector('.formulario'),
         $inputs = d.querySelectorAll('.formulario [required]');
 
-    //console.log($inputs)
+    console.log($inputs)
 
     $inputs.forEach(input =>{
         const $span = d.createElement('span');
@@ -53,5 +53,8 @@ function contactFormValidations(){
 const $submit = document.querySelector('.submit-btn')
 
 $submit.addEventListener('click', () =>{
+    contactFormValidations()
+})
+document.addEventListener('DOMContentLoaded', () =>{
     contactFormValidations()
 })

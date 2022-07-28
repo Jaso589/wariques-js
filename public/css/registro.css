@@ -90,7 +90,14 @@
 .none{
     display: none;
 }
-
+.formulario label{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label span{
+    min-width: 35vw;
+    margin: -15px 24px 16px 24px;
+}
 @media (max-width:950px){
     .register{
         height: auto;
@@ -102,19 +109,15 @@
         width: 100vw;
         padding: 0;
     }
-    .register .formulario{
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-    .formulario input{
+    .formulario .input{
         border: 1.5px solid #3D4E54;
         box-sizing: border-box;
         border-radius: 4px;
-        min-width: 300px;
-        max-width: 90vw;
+        min-width: 80vw;
         height: 50px;
+        margin: 0 24px 16px 24px;
     }
+    
     .submit-btn{
         min-width: 300px;
         max-width: 90vw;

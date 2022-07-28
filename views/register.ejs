@@ -3,45 +3,45 @@
     <div class="container-rg">
         <form class="formulario">
             <label for="negocio">
-                <input class="input" type="text" name="negocio" placeholder="Nombre del negocio" required>
+                <input class="input" type="text" name="negocio" placeholder="Nombre del negocio" title="El nombre solo acepta letras y espacios en blanco" required>
             </label>
             
             <label for="nombre">
-                <input class="input" type="text" name="nombre" placeholder="Nombre del representante" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                <input class="input" type="text" name="nombre" placeholder="Nombre del representante" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="El nombre solo acepta letras y espacios en blanco" required>
             </label>
             
             <label for="correo">
-                <input class="input" type="text" required name="correo" placeholder="Correo electrónico" pattern="[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input class="input" type="text" required name="correo" placeholder="Correo electrónico" pattern="[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Email incorrecto" required>
             </label>
             
             <label for="telefono">
-                <input class="input" type="tel" required name="telefono" placeholder="Teléfonoo" pattern="[0-9]{9}">
+                <input class="input" type="tel" required name="telefono" placeholder="+51 999 999 999" title="Formato incorrecto" pattern="(\+51|0051|51)?[ -]*([0-9])[ -]*([0-9][ -]*){8}" >
             </label>
             <label for="comida">
                 <input class="input" type="text" name="comida" placeholder="Tipo de comida" required>
             </label>
             <label for="departamento">
-                <input class="input" type="text" name="departamento" placeholder="Departamento">
+                <input class="input" type="text" name="departamento" placeholder="Departamento" required>
             </label>
             <label for="distrito">
-                <input class="input" type="text" name="distrito" placeholder="Distrito">
+                <input class="input" type="text" name="distrito" placeholder="Distrito" required>
             </label>
             <label for="direccion">
-                <input class="input" type="text" name="direccion" placeholder="Dirección">
+                <input class="input" type="text" name="direccion" placeholder="Dirección" required>
             </label>
             <div class="registro-rq">
                 <div class="checks">
                     <label for="politicas">
                     
                     </label>
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                         <p>He leído <a href="#">las politícas de privacidad</a></p>
                 </div>
                 <div class="checks">
                     <label for="publicidad">
 
                     </label>
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                         <p>Autorizo que me envien publicidad y/o promociones</p>
                 </div>
             </div>
@@ -49,6 +49,12 @@
                 
             <div class="bnt-form">
                 <input type="submit" class="submit-btn">
+            </div>
+            <div class="contact-form-loader none">
+                <img src="resources/img/icon/circles.svg" alt="cargando">
+            </div>
+            <div class="contact-form-response none">
+                <p>Los datos han sido enviados</p>
             </div>
         </form>
         

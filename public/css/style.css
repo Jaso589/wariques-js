@@ -292,6 +292,9 @@ footer{
     }
 }
 @media (max-width:950px){
+    .container{
+        width: 90vw;
+    }
     .btn-menu{
         position: absolute;
         left: 10px;
@@ -329,6 +332,7 @@ footer{
         width: 100%;
         align-items: flex-start;
         justify-content: flex-start;
+        padding: 0 20px;
     }
     .items-nav a{
         width: 100%;
@@ -406,18 +410,23 @@ footer{
     }
     .cupon{
         display: block;
-        padding:  0 20px;
         margin: 20px 0;
-        height: 100px;
+        height: 20vh;
         width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .cupon-slide img{
-        width: 100%;
+    .cupon-slide{
         height: 100%;
-        object-fit: contain;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cupon-slide img{
+        width: 90vw;
+        object-fit: cover;
     }
     .categoria-list{
         justify-content: flex-start;
